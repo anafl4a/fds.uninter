@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+<!-- Preconnect to CDN for faster resource loading -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<!-- Bootstrap CSS from CDN with integrity check -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 <link rel="stylesheet" href="./estilo.css">
 
 <title>Curitiba</title>
@@ -33,7 +37,7 @@
 <section class="container">
 <div id="sobre-nos" class="container">
 <h1> Sobre nós</h1>
-<img class="img-responsive" src="./img/sobreNos.jpg"/>
+<img class="img-responsive" src="./img/sobreNos.jpg" loading="lazy" alt="Foto de Curitiba"/>
 <h4> Photo by Gabriel Rodrigues on Unsplash</h4>
 
 <div class="panel-group"id="painel-sobre">
@@ -82,21 +86,21 @@ fonte: ricmais.com.br
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="./img/foto1.jpg" alt="...">
+      <img src="./img/foto1.jpg" loading="lazy" alt="Foto de Curitiba 1">
       <div class="carousel-caption">
 	  <h3> Photo by Cassiano Psomas on pexels</h3>
         ...
       </div>
     </div>
     <div class="item">
-      <img src="./img/foto2.jpg" alt="...">
+      <img src="./img/foto2.jpg" loading="lazy" alt="Foto de Curitiba 2">
       <div class="carousel-caption">
 	  <h3> Photo by Koala on Unsplash</h3>
         ...
       </div>
     </div>
 	<div class="item">
-      <img src="./img/foto3.jpg" alt="...">
+      <img src="./img/foto3.jpg" loading="lazy" alt="Foto de Curitiba 3">
       <div class="carousel-caption">
 	   <h3> Photo by Cassiano Psomas on Unsplash</h3>
         ...
@@ -116,8 +120,10 @@ fonte: ricmais.com.br
   </a>
 </div>
 
-<script src="./jquery.js"></script>
-<script src="./bootstrap/js/bootstrap.min.js"></script>
+<!-- jQuery from CDN - faster loading and browser caching -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+<!-- Bootstrap JS from CDN with integrity check -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 	
 </body>
 </html>
